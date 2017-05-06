@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.leezp.loadbigimage.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/activity_main_bigPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/activity_main_test"/>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/activity_main_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="@string/activity_main_rate"
+        android:textColor="@color/black"/>
+
+</FrameLayout>

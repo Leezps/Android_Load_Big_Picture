@@ -1,0 +1,18 @@
+/**
+ * 4.4之前：
+ * Uri: content://com.android.externalstorage.documents/document/primary%3A1.png。
+ * Path: /storage/emulated/0/1.png
+ * 4.4之后：
+ * Uri: content://com.android.providers.media.documents/document/image%3A16025。
+ * Path: /storage/emulated/0/very_big.jpg
+ */
+
+这个Uri对应的存储路径我也不确定，但是我是对了。
+
+因为我的是7.1，但是你看MyPhone_Image_Location.png，显示的是4.4的Uri，所以…………
+
+获取存储地址的方式：
+
+Uri uri = new Uri("Uri: content://com.android.externalstorage.documents/document/primary%3A1.png");
+
+UriPathUtils.getPath(this, uri));

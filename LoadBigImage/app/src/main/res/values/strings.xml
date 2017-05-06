@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoadBigImage</string>
+    <string name="activity_main_rate">1:10000</string>
+</resources>
